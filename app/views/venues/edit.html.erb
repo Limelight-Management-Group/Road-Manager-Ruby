@@ -1,0 +1,100 @@
+<h1>Edit Page</h1>
+
+
+
+
+<form class="form-horizontal" action=<%= "/venues/#{@venue.id}" %> method="POST">
+ <input type="hidden" name="_method" value="PUT"/>
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>Add New Venues</legend>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="name">Name</label>
+      <div class="col-md-4">
+      <input id="name" name="venue[name]" type="text" value="<%= @venue.name %>" class="form-control input-md" required="">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="artistName">Venue Name</label>
+      <div class="col-md-4">
+      <input id="textinput" name="venue[venue_name]" type="text" value="<%= @venue.venue_name%>" class="form-control input-md">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Location">Location</label>
+      <div class="col-md-4">
+      <input id="Location" name="venue[location]" type="text" value="<%= @venue.location%>" placeholder="City, State, Country " class="form-control input-md">
+
+      </div>
+    </div>
+
+   <!-- Text input-->
+
+
+    <!-- input -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="age_restriction">Age Restriction(check for yes)</label>
+      <div class="col-md-4">
+        <input id="age_restriction" name="venue[age_restriction]" type="checkbox" value="<%= @venue.age_restriction%>" class="form-control input-md">
+      </div>
+    </div>
+
+    <!-- input -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="genre">Genres (separated by commas)</label>
+      <div class="col-md-4">
+        <input class="form-control" id="genre" name="venue[genre]" value="<%= @venue.genre %>" placeholder="rock, pop, All"></input>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="registration_required">Registration Required(check for yes)</label>
+      <div class="col-md-4">
+      <input id="registration_required" name="venue[registration_required]" value="<%= @venue.registration_required %>" type="checkbox" placeholder="enter true or false" class="form-control input-md">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="website">Website</label>
+      <div class="col-md-4">
+      <input id="website" name="venue[website]" type="text" placeholder="" value="<%= @venue.website %>" class="form-control input-md">
+
+      </div>
+    </div>
+
+    <!-- input -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="special_instructions">Special Instructions</label>
+      <div class="col-md-4">
+        <input class="form-control" id="special_instructions" name="venue[special_instructions]" value="<%= @venue.special_instructions %>" placeholder="How do artists get set up?(what is the age restriction/contact person?)"></input>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" type="hidden" for="singlebutton">Update Venue</label>
+      <div class="col-md-4">
+        <form action=<%= "/venues/#{@venue.id}/edit" %> method="GET  ">
+          <input type="hidden" name="_method" value="PUT"/>
+          <input type="submit" value="UPDATE"/>
+        </form>
+
+      </div>
+    </div>
+
+  </fieldset>
+</form>
+
+

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  event_name: MyString
+  genre: MyString
+  location: MyString
+  age_restriction: false
+  website: MyString
+  reqistration_required: false
+  special_instructions: MyString
+  latitude: 1.5
+  logitude: 1.5
+
+two:
+  name: MyString
+  event_name: MyString
+  genre: MyString
+  location: MyString
+  age_restriction: false
+  website: MyString
+  reqistration_required: false
+  special_instructions: MyString
+  latitude: 1.5
+  logitude: 1.5

@@ -1,0 +1,108 @@
+// Place all the styles related to the venues controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  padding-top: 5px;
+  margin: 20px;
+  margin-left: 353px;
+  margin-right: 40px;
+  width: 66%;
+  height: 350px;
+  border-radius: 10px;
+
+
+}
+
+nav {
+  margin-left: -520px;
+  width: 200%;
+}
+
+#mainImg {
+  margin-top: 20px;
+  margin-left: 363px;
+  width: 1240px;
+  height: 620px;
+  border-radius: 90%;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+  opacity: .3;
+}
+
+.vignette {
+  position: relative;
+  border-radius: 10px;
+}
+.vignette img {
+ display: block;
+}
+.vignette:after {
+ margin-left: 127px;
+ -moz-box-shadow: inset 0 0 10em #666;
+ -webkit-box-shadow: inset 0 0 10em #666;
+ box-shadow: inset 0 0 10em #666;
+ position: absolute;
+ top: 0;
+ left: 22%;
+ width: 48%;
+ height: 100%;
+ z-index: 2;
+ content: "";
+}
+
+.title {
+  margin-left: 370px;
+}
+.subtitle {
+  margin-left: 365px;
+}
+
+li {
+  list-style-type: none;
+}
+
+#indexContent {
+  max-width: 850px;
+  margin-left: 565px;
+  height: 350px;
+  border-radius: 25px;
+  margin-top: -10px
+  font-size: 20px;
+}
+
+.centeredText {
+
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  font-size: 23px;
+  margin-top: -10px;
+
+}
+
+.centeredText2 {
+  padding: 5px 0 5px 0;
+  color: red;
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -5px;
+
+}
+
+#venueLinks {
+  max-width: 1480px;
+  padding-bottom: 40px;
+  font-size: 20px;
+  margin-left: 165px;
+  margin-top: 45px;
+}
+.limeLinks {
+  color: black;
+}

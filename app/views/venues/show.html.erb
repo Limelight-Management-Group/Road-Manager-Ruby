@@ -1,0 +1,36 @@
+<h1>Show page</h1>
+
+
+
+<h2>
+Venue name: <%= @venue.name %><br>
+Event title: <%= @venue.event_name %><br>
+Address: <%= @venue.location %><br>
+Is there an age restriction?: <%= @venue.age_restriction %><br>
+What genres: <%= @venue.genre %><br>
+Is registration required?: <%= @venue.registration_required %><br>
+Website: <%= @venue.website %><br>
+Any Special instructions: <%= @venue.special_instructions %>
+</h2>
+
+
+<form action="/venues/<%= @venue.id %>" method="post">
+  <input type="hidden" name="_method" value="DELETE"/>
+  <input type="submit" value="Delete"/>
+</form>
+
+<button type="submit"><a href="/venues/<%= @venue.id %>/edit">edit</a></button>
+
+
+
+<div id="map" style="height:400px">
+  <script>
+  var data = <%= @venue.to_json %>
+  console.log(data,"data length"+data.length)
+  initMap(data)
+        // map = new google.maps.Map(document.getElementById('map'), {
+        //   center: {lat: data2.latitude, lng: data2.longitude},
+        //   zoom: 8
+        // });
+  </script>
+</div>
